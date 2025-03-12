@@ -1,5 +1,7 @@
 <?php
 
+    require_once("../../models/User.php");
+    require_once("../../models/Image.php");
     require("../../connection/connection.php");
 
     $users = [
@@ -46,6 +48,10 @@
         ]
     ];
     
+    foreach($users as $user) {
+        $user_object = new UserSkeleton($user["full_name"], $user["email"], hash('sha256', $user["password"]));
+         
+    }
     
 
 ?>
