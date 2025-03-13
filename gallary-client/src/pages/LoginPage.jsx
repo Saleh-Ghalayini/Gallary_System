@@ -23,7 +23,7 @@ const LoginPage = () => {
 
             if(response.data.status === "Succeed") {
                 alert("logged in successfully");
-                window.location.href = "./gallary.jsx";
+                window.location.href = "./GalleryPage.jsx";
             } else {
                 alert("Invalid credentials, try again");
             }
@@ -34,7 +34,7 @@ const LoginPage = () => {
 
     return (
         <div className="container">
-            <h1>Gallary System</h1>
+            <h1>Gallery System</h1>
             <div className="input-area">
                 <InputField
                     type="email" 
@@ -60,7 +60,7 @@ const LoginPage = () => {
                 </p>
             </div>
         </div>
-    )
+    );
 
 };
 

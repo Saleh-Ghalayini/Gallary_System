@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
-import GallaryPage from "./pages/GallaryPage";
+import GalleryPage from "./pages/GalleryPage";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<LoginPage />}/>
                 <Route path="/signup" element={<SignupPage />}/>
-                <Route path="/gallary" element={<GallaryPage />}/>
+                <Route path="/gallery" element={<GalleryPage />}/>
                 <Route path="*" element={<NotFound />}/>
             </Routes>
         </BrowserRouter>
