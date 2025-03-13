@@ -1,4 +1,4 @@
-const InputField = ({ type, placeholder, value }) => {
+const InputField = ({ type, placeholder, value, onChange }) => {
     return (
         <>
             <div className="input-area">
@@ -6,6 +6,7 @@ const InputField = ({ type, placeholder, value }) => {
                     type={type}
                     placeholder={placeholder}
                     value={value}
+                    onChange={onChange}
                     required
                 />
             </div>
