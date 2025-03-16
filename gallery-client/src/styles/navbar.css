@@ -1,0 +1,60 @@
+.navbar {
+    position: fixed;  /* Sticks the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ensures full width */
+    height: 60px;  /* Adjust as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;  /* Makes sure it's above everything else */
+}
+
+/* Pushes content down so it doesn't hide behind the navbar */
+.page-content {
+    margin-top: 70px; /* Adjust this based on your navbar height */
+}
+
+/* Existing styles */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFB200;
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #505050;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-btn:hover {
+    color: black;
+}
+
+.logout-btn {
+    border: 1px solid #FFB200;
+    background: none;
+    color: #000000;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #f5b00f;
+    box-shadow: 0 4px 8px rgba(192, 168, 15, 0.3);
+}
