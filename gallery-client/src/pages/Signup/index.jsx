@@ -1,8 +1,8 @@
 import { useState } from "react";
-import InputField from "../components/InputField";
-import Button from "../components/Button";
+import InputField from "../../components/InputField";
+import Button from "../../components/Button";
 import axios from "axios";
-import "../styles/signup.css";
+import "./style.css";
 
 const SignupPage = () => {
     const [full_name, setFullName] = useState("");
