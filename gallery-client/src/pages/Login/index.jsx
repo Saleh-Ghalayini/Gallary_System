@@ -1,8 +1,8 @@
 import { useState } from "react";
-import InputField from "../components/InputField";
-import Button from "../components/Button";
+import InputField from "../../components/InputField";
+import Button from "../../components/Button";
 import axios from "axios";
-import "../styles/login.css";
+import "./style.css";
 
 const LoginPage = () => {
     const [email, setEmail] = useState("");

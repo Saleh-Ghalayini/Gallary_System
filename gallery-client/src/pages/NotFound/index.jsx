@@ -1,5 +1,5 @@
-import Button from "../components/Button";
-import "../styles/notfound.css";
+import Button from "../../components/Button";
+import "./style.css";
 
 const NotFound = () => {
 
